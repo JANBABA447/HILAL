@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hilal"
+version = "0.2.0"
+description = "Astronomical engine for Islamic (Hijri) calendars, crescent visibility and prayer times"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+docs = ["matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
